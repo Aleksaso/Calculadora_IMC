@@ -4,63 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
     android:orientation="vertical"
     tools:context=".ResultActivity">
 
     <TextView
-        android:textColor="@color/purple_700"
-        android:layout_marginTop="16dp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:text="Seu IMC es:"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Valor IMC:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/gotham_medium"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textView_result"
         android:layout_width="match_parent"
         android:textAlignment="center"
-        android:padding="16dp"
         android:layout_height="wrap_content"
         tools:text="27.1025"
-        android:textSize="30sp" />
-
+        android:fontFamily="@font/gotham_medium"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:paddingTop="6dp"/>
     <TextView
-        android:id="@+id/textView_clasificacion"
+        android:id="@+id/textView_Clasificacion"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        tools:text="Normal"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:paddingBottom="6dp"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        tools:text="Clasificación Normal"
-        android:textSize="18sp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Tabla de referencia:"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="Menor de 18.5  Delgado"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="Entre 18.5 y 24.9  Normal"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="Entre 25 y 29.9  Sobrepeso"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="Entre 30 y 39.9  Obesidad"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="Mayor de 40  Obesidad Grave"/>
+        android:orientation="horizontal"
+        android:gravity="center">
 
+        <Button
+            android:id="@+id/button1"
+            android:text="Peso (Kg)"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:text="Altura (cm)"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Tabla de Referencia:"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="@font/gotham_medium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Menor que 18.5: Delgado"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginVertical="3dp"
+        android:fontFamily="@font/gotham_medium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Entre 18.5 y 25:  Normal"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginVertical="3dp"
+        android:fontFamily="@font/gotham_medium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Entre 25 y 29.9: Sobrepeso |"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginVertical="3dp"
+        android:fontFamily="@font/gotham_medium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Entre 30 y 39.9: Obesidad ||"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginVertical="3dp"
+        android:fontFamily="@font/gotham_medium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Mayor que 39.5: Obesidad Grave |||"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginVertical="3dp"
+        android:fontFamily="@font/gotham_medium"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="90dp"
+        android:text="Calcular Nuevamente"/>
 </LinearLayout>

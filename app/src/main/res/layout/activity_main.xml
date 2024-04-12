@@ -3,34 +3,67 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_margin="20dp"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/persona"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/persona"/>
+    <TextView
+        android:id="@+id/datos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Datos Personales"
+        android:fontFamily="@font/gotham_medium"
+        android:textSize="20dp"
+        android:layout_marginTop="280dp"
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/edtText_Peso"
+        android:layout_marginTop="330dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite su Peso"
+        android:layout_marginStart="20dp"
+        android:hint="Peso (Kg)"
+        android:fontFamily="@font/gotham_medium"
         android:inputType="numberDecimal"
         android:maxLength="6" />
-
     <EditText
-
         android:id="@+id/edtText_Altura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edtText_Peso"
-        android:hint="Digite su Altura"
+        android:layout_marginStart="20dp"
+        android:hint="Altura (cm)"
+        android:fontFamily="@font/gotham_medium"
         android:inputType="numberDecimal"
         android:maxLength="6"/>
 
     <Button
+        android:id="@+id/reseet"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="430dp"
+        android:layout_marginStart="20dp"
+        android:text="Reset"
+        android:fontFamily="@font/gotham_medium"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+    <Button
         android:id="@+id/btncalcular"
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Calcular IMC"/>
-
+        android:text="Calcular IMC"
+        android:fontFamily="@font/gotham_medium"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
 </RelativeLayout>

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -19,24 +18,25 @@ class MainActivity : AppCompatActivity() {
 
         btncalcular.setOnClickListener {
 
-            val alturastr = edtAltura.text .toString()
-            val pesostr = edtPeso.text .toString()
+            val alturastr = edtAltura.text.toString()
+            val pesostr = edtPeso.text.toString()
 
-            if(alturastr.isNotEmpty() && pesostr.isNotEmpty()){
-            val altura: Float = alturastr.toFloat()
-            val peso: Float = pesostr.toFloat()
+            if (alturastr.isNotEmpty() && pesostr.isNotEmpty()) {
+                    val altura: Float = alturastr.toFloat()
+                    val peso: Float = pesostr.toFloat()
 
-            val alturaFinal: Float = altura * altura
-            val result: Float = peso / alturaFinal
+                    val alturaFinal: Float = altura * altura
+                    val result: Float = peso / alturaFinal
 
-            val intent = Intent(this, ResultActivity::class.java)
-                .apply {
-                    putExtra("EXTRA_RESULT", result)
+                    val intent = Intent(this, ResultActivity::class.java)
+                        .apply {
+                            putExtra("EXTRA_RESULT", result)
+                        }
+                    startActivity(intent)
                 }
-            startActivity(intent)
-        }else{
-                Toast.makeText(this, "Rellenar todos los campos", Toast.LENGTH_SHORT).show()
+                else{
+                    Toast.makeText(this, "Rellenar todos los campos", Toast.LENGTH_SHORT).show()
+                }
             }
+        }
     }
-}
-}
