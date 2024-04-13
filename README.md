@@ -8,8 +8,7 @@ Para mejorar la estética, creé background y gradient con shapes en XML, ademá
 Implementé la navegación entre pantallas para una experiencia fluida del usuario, incluyendo botones de regreso.
 
 En resumen, este proyecto me permitió aplicar y consolidar conocimientos en diseño de interfaces, manejo de recursos visuales, 
-navegación entre pantallas, y manejo en Android. Estoy contento con el resultado y agradezco a @DevSpace por brindar 
-la oportunidad de compartir conocimientos en el desarrollo de aplicaciones móviles.
+navegación entre pantallas, y manejo en Android.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screeenshots here if you like-->
