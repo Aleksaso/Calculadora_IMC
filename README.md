@@ -16,14 +16,15 @@ navegación entre pantallas, y manejo en Android.
 
 # Tecnología
 
-*Activity
-*Intent
-*Snackbar
-*ViewGroups
-    *LinearLayout
-    *ConstranintLayout
-*Views
-    *ImageView
-    *TextView
-    *EditView
-    *Button
+- Activity
+* Intent
++ Snackbar
+
++ ViewGroups
+    * LinearLayout
+    * ConstranintLayout
+- Views
+    * ImageView
+    * TextView
+    * EditView
+    * Button
