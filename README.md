@@ -13,4 +13,18 @@ la oportunidad de compartir conocimientos en el desarrollo de aplicaciones móvi
 
 ## :camera_flash: Screenshots
 <!-- You can add more screeenshots here if you like-->
-<img src"/result/inicio.png" width="260">&emsp;<img src"/result/calcular.png" width="260">&emsp;<img src"/result/Result.png" width="260">
+<img src="/result/inicio.png" width="260">&emsp;<img src="/result/calcular.png" width="260">&emsp;<img src="/result/Result.png" width="260">
+
+# Tecnología
+
+*Activity
+*Intent
+*Snackbar
+*ViewGroups
+    *LinearLayout
+    *ConstranintLayout
+*Views
+    *ImageView
+    *TextView
+    *EditView
+    *Button
